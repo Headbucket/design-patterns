@@ -8,7 +8,7 @@ Example implementations of different design patterns in different programming la
 
 |Pattern|C#|Delphi|Python|
 |-|-|-|-|
-|Abstract factory|-|-|-|
+|Abstract factory|[link](examples/csharp/abstract-factory)|-|[link](examples/python/abstract-factory)|
 |Builder|-|-|-|
 |Dependency Injection|-|-|-|
 |Factory method|[link](examples/csharp/factory-method)|[link](examples/delphi/factory-method)|[link](examples/python/factory-method)|
