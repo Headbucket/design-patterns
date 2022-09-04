@@ -11,7 +11,7 @@ Example implementations of different design patterns in different programming la
 |Abstract factory|-|-|-|
 |Builder|-|-|-|
 |Dependency Injection|-|-|-|
-|Factory method|-|[link](examples/delphi/factory-method)|[link](examples/python/factory-method)|
+|Factory method|[link](examples/csharp/factory-method)|[link](examples/delphi/factory-method)|[link](examples/python/factory-method)|
 |Lazy initialization|-|-|-|
 |Multiton|-|-|-|
 |Object pool|-|-|-|
