@@ -17,7 +17,7 @@ Example implementations of different design patterns in different programming la
 |Object pool|-|-|-|
 |Prototype|-|-|-|
 |Resource acquisition is initialization (RAII)|-|-|-|
-|Singleton|-|-|-|
+|Singleton|[link](examples/csharp/singleton)|-|-|
 
 **Structural patterns**
 
