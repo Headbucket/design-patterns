@@ -35,8 +35,6 @@ Example implementations of different design patterns in different programming la
 |Module|-|-|-|
 |Proxy|-|-|-|
 |Twin|-|-|-|
-||-|-|-|
-||-|-|-|
 
 **Behavioral patterns**
 
