@@ -48,7 +48,7 @@ Example implementations of different design patterns in different programming la
 |Mediator|-|-|-|
 |Memento|-|-|-|
 |Null object|-|-|-|
-|Observer or Publish/subscribe|-|-|-|
+|Observer or Publish/subscribe|[link](examples/csharp/observer)|-|-|
 |Servant|-|-|-|
 |Specification|-|-|-|
 |State|-|-|-|
