@@ -47,7 +47,7 @@ Example implementations of different design patterns in different programming la
 |Iterator|-|-|-|
 |Mediator|-|-|-|
 |Memento|-|-|-|
-|Null object|-|-|-|
+|Null object|[link](examples/csharp/null-object)|-|-|
 |Observer or Publish/subscribe|[link](examples/csharp/observer)|-|-|
 |Servant|-|-|-|
 |Specification|-|-|-|
