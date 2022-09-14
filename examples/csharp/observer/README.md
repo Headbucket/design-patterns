@@ -120,7 +120,7 @@ namespace Observer
             Console.WriteLine("Output from ObserverA");
             foreach (var customer in customers)
             {
-                Console.WriteLine("Name: {0}, Salery: {1}", customer.Name, customer.Salery);
+                Console.WriteLine($"Name: {customer.Name}, Salery: {customer.Salery}");
             }
             Console.WriteLine();
         }
@@ -130,6 +130,8 @@ namespace Observer
 
 **Observer.Impl.B.cs**
 ```csharp src\Observer.Impl.B.cs
+using System.Collections.Generic;
+
 namespace Observer
 {
     internal class ObserverB : IObserver
@@ -138,28 +140,11 @@ namespace Observer
         {
             Console.WriteLine("Output from ObserverB");
 
-            decimal? MaxSalery = null;
-            string? Name = null;
-            for (int i = 0; i < customers.Count; i++)            
-            {
-                if (i == 0)
-                {
-                    Name = customers[i].Name;
-                    MaxSalery = customers[i].Salery;
-                }
-                else
-                {
-                    if (customers[i].Salery > MaxSalery)
-                    {
-                        Name = customers[i].Name;
-                        MaxSalery = customers[i].Salery;
-                    }
-                }
-            }
+            var customer = customers.MaxBy(x => x.Salery);
 
-            if (Name != null)
+            if (customer is not null)
             {
-                Console.WriteLine("Customer with highest salery: {0}", Name);
+                Console.WriteLine($"Customer with highest salery: {customer.Name}");
             }
 
             Console.WriteLine();
@@ -176,8 +161,8 @@ namespace Observer
     {
         public void Update(Customers customers)
         {
-            Console.WriteLine("Output from ObserverB");
-            Console.WriteLine("Number of customers: {0}", customers.Count);
+            Console.WriteLine("Output from ObserverC");
+            Console.WriteLine($"Number of customers: {customers.Count}");
             Console.WriteLine();
         }        
     }

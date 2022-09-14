@@ -10,7 +10,7 @@ namespace Singleton
 
         public static Settings GetInstance()
         {
-            if (_instance == null)
+            if (_instance is null)
             {
                 _instance = new Settings();
 

@@ -4,7 +4,7 @@
     {
         public string GetOutputString(double x)
         {
-            return String.Format("Mean value: {0}", x);
+            return $"Mean value: {x}";
         }
     }
 }

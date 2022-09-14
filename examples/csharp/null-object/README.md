@@ -14,7 +14,7 @@ foreach (var daoType in daoTypes)
     IDAO dao = DAOFactory.CreateDAO(daoType);
     dao.saveCustomer(new Customer());
     Customers customers = dao.getUsersByName("Peter", "Pane");
-    Console.WriteLine(String.Format("Customers found in {0}: {1}", daoType, customers.Count));
+    Console.WriteLine($"Customers found in {daoType}: {customers.Count}");
 }
 ```
 
@@ -55,8 +55,6 @@ namespace NullObject
 
 **DAO.Impl.NullObject.cs**
 ```csharp src\DAO.Impl.NullObject.cs
-using System.Drawing;
-
 namespace NullObject
 {
     internal sealed class DAONullObject : IDAO
@@ -65,7 +63,7 @@ namespace NullObject
 
         public static DAONullObject GetInstance()
         {
-            if (_instance == null)
+            if (_instance is null)
             {
                 _instance = new DAONullObject();
             }

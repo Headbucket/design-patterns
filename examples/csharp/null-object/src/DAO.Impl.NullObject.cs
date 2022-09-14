@@ -6,7 +6,7 @@
 
         public static DAONullObject GetInstance()
         {
-            if (_instance == null)
+            if (_instance is null)
             {
                 _instance = new DAONullObject();
             }

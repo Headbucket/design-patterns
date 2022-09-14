@@ -1,4 +1,6 @@
-﻿namespace Observer
+﻿using System.Collections.Generic;
+
+namespace Observer
 {
     internal class ObserverB : IObserver
     {
@@ -6,28 +8,11 @@
         {
             Console.WriteLine("Output from ObserverB");
 
-            decimal? MaxSalery = null;
-            string? Name = null;
-            for (int i = 0; i < customers.Count; i++)            
-            {
-                if (i == 0)
-                {
-                    Name = customers[i].Name;
-                    MaxSalery = customers[i].Salery;
-                }
-                else
-                {
-                    if (customers[i].Salery > MaxSalery)
-                    {
-                        Name = customers[i].Name;
-                        MaxSalery = customers[i].Salery;
-                    }
-                }
-            }
+            var customer = customers.MaxBy(x => x.Salery);
 
-            if (Name != null)
+            if (customer is not null)
             {
-                Console.WriteLine("Customer with highest salery: {0}", Name);
+                Console.WriteLine($"Customer with highest salery: {customer.Name}");
             }
 
             Console.WriteLine();

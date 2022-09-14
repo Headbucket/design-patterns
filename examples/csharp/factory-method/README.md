@@ -71,10 +71,7 @@ namespace FactoryMethod
     {
         public double calculate(int[] list)
         {
-            double result = 0;
-            foreach (var item in list)
-                result += item;
-            return result;
+            return list.Sum();
         }
     }
 }
@@ -88,12 +85,7 @@ namespace FactoryMethod
     {
         public double calculate(int[] list)
         {
-            double result = 0;
-            foreach (var item in list)
-                result += item;
-            if (list.Length > 0)
-                result /= list.Length;
-            return result;
+            return list.Length > 0 ? list.Average() : 0.0;
         }
     }
 }

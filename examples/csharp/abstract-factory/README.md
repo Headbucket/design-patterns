@@ -11,18 +11,17 @@ int[] intList =  {1, 2, 3, 4};
 for (int i = 0; i < 2; i++)
 {
     IFactory factory;
-    if (i == 0)
+    switch(i)
     {
-        factory = new FactoryTotalizer();
-    }
-    else if (i == 1)
-    {
-        factory = new FactoryMediator();
-    }
-    else
-    {
-        throw new ArgumentException("Factory not implemented.");
-    }
+        case 0:
+            factory = new FactoryTotalizer();
+            break;
+        case 1:
+            factory = new FactoryMediator();
+            break;
+        default:
+            throw new ArgumentException("Factory not implemented.");            
+    }   
     ICalculationUnit unit = factory.CreateCalculationUnit();
     IViewer viewer = factory.CreateViewer();
     Console.WriteLine(viewer.GetOutputString(unit.calculate(intList)));   
@@ -101,10 +100,7 @@ namespace AbstractFactory
     {
         public double calculate(int[] list)
         {
-            double result = 0;
-            foreach (var item in list)
-                result += item;
-            return result;
+            return list.Sum();
         }
     }
 }
@@ -118,12 +114,7 @@ namespace AbstractFactory
     {
         public double calculate(int[] list)
         {
-            double result = 0;
-            foreach (var item in list)
-                result += item;
-            if (list.Length > 0)
-                result /= list.Length;
-            return result;
+            return list.Length > 0 ? list.Average() : 0.0;
         }
     }
 }
@@ -148,7 +139,7 @@ namespace AbstractFactory
     {
         public string GetOutputString(double x)
         {
-            return String.Format("Total value: {0}", x);
+            return $"Total value: {x}";
         }
     }
 }
@@ -162,7 +153,7 @@ namespace AbstractFactory
     {
         public string GetOutputString(double x)
         {
-            return String.Format("Mean value: {0}", x);
+            return $"Mean value: {x}";
         }
     }
 }

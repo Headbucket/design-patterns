@@ -4,8 +4,8 @@
     {
         public void Update(Customers customers)
         {
-            Console.WriteLine("Output from ObserverB");
-            Console.WriteLine("Number of customers: {0}", customers.Count);
+            Console.WriteLine("Output from ObserverC");
+            Console.WriteLine($"Number of customers: {customers.Count}");
             Console.WriteLine();
         }        
     }

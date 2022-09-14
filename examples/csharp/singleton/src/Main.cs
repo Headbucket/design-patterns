@@ -1,5 +1,4 @@
 ﻿using Singleton;
-using System.Runtime.InteropServices;
 
 Settings settings1 = Settings.GetInstance();
 Settings settings2 = Settings.GetInstance();
@@ -13,5 +12,5 @@ else
     Console.WriteLine("settings1 != settings2");
 }
 
-Console.WriteLine(String.Format("Background color: {0}", settings1.BackgroundColor.ToString()));
-Console.WriteLine(String.Format("Text color: {0}", settings1.TextColor.ToString()));
+Console.WriteLine($"Background color: {settings1.BackgroundColor}");
+Console.WriteLine($"Text color: {settings1.TextColor}");

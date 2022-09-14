@@ -4,7 +4,7 @@
     {
         public string GetOutputString(double x)
         {
-            return String.Format("Total value: {0}", x);
+            return $"Total value: {x}";
         }
     }
 }
