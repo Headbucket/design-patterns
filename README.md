@@ -10,7 +10,7 @@ Example implementations of different design patterns in different programming la
 |-|-|-|-|
 |Abstract factory|[link](examples/csharp/abstract-factory)|-|[link](examples/python/abstract-factory)|
 |Builder|-|-|-|
-|Dependency Injection|-|-|-|
+|Dependency Injection|[link](examples/csharp/dependency-injection)|-|-|
 |Factory method|[link](examples/csharp/factory-method)|[link](examples/delphi/factory-method)|[link](examples/python/factory-method)|
 |Lazy initialization|-|-|-|
 |Multiton|-|-|-|
