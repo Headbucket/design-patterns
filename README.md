@@ -23,7 +23,7 @@ Example implementations of different design patterns in different programming la
 
 |Pattern|C#|Delphi|Python|
 |-|-|-|-|
-|Adapter, Wrapper, or Translator|-|-|-|
+|Adapter, Wrapper, or Translator|[link](examples/csharp/adapter)|-|-|
 |Bridge|-|-|-|
 |Composite|-|-|-|
 |Decorator|-|-|-|
