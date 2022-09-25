@@ -18,6 +18,15 @@ foreach (var daoType in daoTypes)
 }
 ```
 
+**Console output**
+```console
+Customer saved in SQLite.
+Customers found in SQLITE: 5
+Customer saved in MSSQL.
+Customers found in MSSQL: 1
+Customers found in POSTGRESQL: 0
+```
+
 ## Customer
 
 **Customer.cs**

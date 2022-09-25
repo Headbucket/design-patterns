@@ -22,6 +22,13 @@ Console.WriteLine($"Background color: {settings1.BackgroundColor}");
 Console.WriteLine($"Text color: {settings1.TextColor}");
 ```
 
+**Console output**
+```console
+settings1 == settings2
+Background color: Color [Black]
+Text color: Color [Red]
+```
+
 ## Class
 
 **Settings.cs**

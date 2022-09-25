@@ -40,6 +40,12 @@ begin
 end.
 ```
 
+**Console output**
+```console
+10
+2,5
+```
+
 ## Factory
 
 **CalculationUnit.Factory.pas**

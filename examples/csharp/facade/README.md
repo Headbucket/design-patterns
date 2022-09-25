@@ -11,6 +11,17 @@ Data data = new Data();
 facade.SaveData(data);
 ```
 
+**Console output**
+```console
+Save data to JSON...
+JSON saved!
+Save data to XML...
+XML saved!
+Save data to CSV...
+The following error occured while saving: System.Exception: Error while saving CSV!
+[...]
+```
+
 ## Facade
 
 **SaverFacade.cs**

@@ -20,6 +20,12 @@ if __name__ == '__main__':
         print(viewer.get_output_string(unit.calculate(list)))
 ```
 
+**Console output**
+```console
+Mean value: 2.5
+Total value: 10
+```
+
 ## Factory
 
 **factory.py**

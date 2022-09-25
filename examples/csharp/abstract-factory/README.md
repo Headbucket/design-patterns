@@ -28,6 +28,12 @@ for (int i = 0; i < 2; i++)
 }
 ```
 
+**Console output**
+```console
+Total value: 10
+Mean value: 2,5
+```
+
 ## Factory
 
 **Factory.Intf.cs**

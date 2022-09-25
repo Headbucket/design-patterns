@@ -15,6 +15,12 @@ ICalculationUnit unit2 = CalculationUnitFactory.CreateCalculationUnit(Calculatio
 Console.WriteLine(unit2.calculate(list).ToString());
 ```
 
+**Console output**
+```console
+10
+2,5
+```
+
 ## Factory
 
 **CalculationUnit.Factory.cs**

@@ -15,6 +15,13 @@ Thread.Sleep(1000);
 printer.PrintMessage("message 3");
 ```
 
+**Console output**
+```console
+2022-09-25 18:38:31:198: message 1
+2022-09-25 18:38:31:315: message 2
+2022-09-25 18:38:32:332: message 3
+```
+
 ## Printer class
 
 **Printer.cs**

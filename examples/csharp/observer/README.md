@@ -27,6 +27,32 @@ customers.Add(new Customer { ID = 4, Name = "Paula Schmidt", Salery = 63003.10m 
 subject.NotifyObservers(customers);
 ```
 
+**Console output**
+```console
+Output from ObserverA
+Name: Paul Nala, Salery: 35615,23
+Name: Jones Smith, Salery: 60123
+Name: Quinn Hills, Salery: 48693,50
+
+Output from ObserverB
+Customer with highest salery: Jones Smith
+
+Output from ObserverC
+Number of customers: 3
+
+Output from ObserverA
+Name: Paul Nala, Salery: 35615,23
+Name: Jones Smith, Salery: 60123
+Name: Quinn Hills, Salery: 48693,50
+Name: Paula Schmidt, Salery: 63003,10
+
+Output from ObserverB
+Customer with highest salery: Paula Schmidt
+
+Output from ObserverC
+Number of customers: 4
+```
+
 ## Customer
 
 **Customer.cs**

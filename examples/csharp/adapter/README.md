@@ -18,6 +18,22 @@ foreach (var city in cities)
 }
 ```
 
+**Console output**
+```console
+DEBUG WeatherAdapter.GetTemperatureByCity: city name: Berlin
+DEBUG WeatherAdapter.CityNameToZipcode: Convert Berlin to zipcode
+DEBUG WeatherZipcode.GetTemperatureByZipcode: Get temperature of zipcode 7404
+Temperatur of Berlin: 15
+DEBUG WeatherAdapter.GetTemperatureByCity: city name: Rom
+DEBUG WeatherAdapter.CityNameToZipcode: Convert Rom to zipcode
+DEBUG WeatherZipcode.GetTemperatureByZipcode: Get temperature of zipcode 3702
+Temperatur of Rom: 12
+DEBUG WeatherAdapter.GetTemperatureByCity: city name: South Greensburg
+DEBUG WeatherAdapter.CityNameToZipcode: Convert South Greensburg to zipcode
+DEBUG WeatherZipcode.GetTemperatureByZipcode: Get temperature of zipcode 19744
+Temperatur of South Greensburg: 25
+```
+
 ## Client interface
 
 **WeatherCity.Intf.cs**

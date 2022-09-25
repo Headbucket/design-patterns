@@ -16,6 +16,12 @@ if __name__ == '__main__':
     print(unit2.calculate(list)) 
 ```
 
+**Console output**
+```console
+10
+2.5
+```
+
 ## Factory
 
 **calculation_unit_factory.py**
